@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -19,6 +21,14 @@ public class Main {
     return null;
     }
     public static int [] mergeSort ( int [] array){
+        if ( isSorted(array)){
+            return array;
+        }
+        int [] left= Arrays.copyOfRange(array,0,array.length/2);
+        int [] right= Arrays.copyOfRange(array,array.length/2,array.length);
+        left = mergeSort(left);
+        right = mergeSort(right);
+        int []merge = merge(left,right);
         return null;
     }
 }
