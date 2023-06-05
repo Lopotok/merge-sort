@@ -14,4 +14,7 @@ public class Main {
     public static int[] merge(int[] left, int[] right) {
     return null;
     }
+    public static int [] mergeSort ( int [] array){
+        return null;
+    }
 }
