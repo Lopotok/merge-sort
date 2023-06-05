@@ -5,10 +5,13 @@ public class Main {
         System.out.printf("Merge Sort -Enyimé");
 
 
-
-        }
-
-        public static boolean isSorted ( int [] array) {
-         return false;
-        }
     }
+
+    public static boolean isSorted(int[] array) {
+        return false;
+    }
+
+    public static int[] merge(int[] left, int[] right) {
+    return null;
+    }
+}
