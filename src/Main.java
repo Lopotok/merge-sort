@@ -8,7 +8,11 @@ public class Main {
     }
 
     public static boolean isSorted(int[] array) {
-        return false;
+        for (int i = 0; i < array.length-1; i++) {
+            if (array[i]>array[i+1]){
+                return false;
+            }
+        } return true;
     }
 
     public static int[] merge(int[] left, int[] right) {
